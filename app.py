@@ -20,8 +20,10 @@ st.image([card.image for card in deck.cards], width=card_width)
 st.markdown("## Shuffling deck")
 shuffle_button = st.button("Shuffle")
 if shuffle_button:
-    deck.shuffle()
+ deck.shuffle()
 st.image([card.image for card in deck.cards], width=card_width)
 
-
-
+pesca_button = st.button("Pesca una carta")
+if pesca_button: 
+   deck.draw()
+st.image([card.image for card in deck.cards], width=card_width)
