@@ -6,3 +6,5 @@ Inoltre ad esso dovranno essere assegnate funzioni come quella di pescare la car
 Probabilmente creeremo anche l'oggetto banco, che ha la principale differenza di dover sempre pescare un ulteriore carta quando il player sceglie di fermarsi. 
 Stiamo lavorando su branch separate. 
 
+# 22.01.2025
+Abbiamo creato un file in cui abbiamo fatto la lista degli oggetti necessari (con le loro propiretà e metodi). E un altro in cui abbiamo scritto le fasi di gioco, che si svolgono a turni. Inoltre ne abbiamo fatto un altro in cui abbiamo marcato alcune cose che sarebbero interessanti da aggiungere. Ci siamo concentrati sul capire le regole e le varie possibilità di gioco.
