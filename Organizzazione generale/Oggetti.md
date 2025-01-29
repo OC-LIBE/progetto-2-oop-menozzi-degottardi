@@ -1,37 +1,42 @@
 Oggetti
 
-- GAME:
+- Game:
 Proprietà: 
-deck: il mazzo con cui si gioca 
-players: i giocatori che partecipano al gioco 
+deck: il mazzo/ i mazzi con cui si gioca. 
+players: numero di giocatori che partecipano al gioco. 
+fase_del_gioco: in che fase del gioco si è.
 
 Metodi: 
-new_game: iniziare una nuova partita 
-Quit_game: chiudere una partita 
+new_game: iniziare una nuova partita. 
+quit_game: chiudere una partita.
 
 - Player:
 Proprietà: 
-name: nome del giocatore 
-Hand 
-Avatar: avarat del personaggio
-Hand: mano in corso
+name: nome del giocatore. 
+Avatar: avatar del personaggio.
+Hand: mano in corso.
 
 - HumanPlayer(Player)
 Proprietà:
-chips: fish giocatore
+chips: fish giocatore.
+last_score: punteggio partita precedente.
 
-- Dealer (Player)
 Metodi:
-ritirarepuntate: Ritiro delle puntate fatte in quella mano
+
+- Dealer(Player)
+Proprietà:
+
+Metodi:
+ritira_puntate: ritiro delle puntate fatte in quella mano.
 
 - Hand:
 Proprietà: 
-cards: carte che compongono la mano
-score: valore attuale delle carte
+cards: carte che compongono la mano.
+score: valore attuale delle carte.
 
 Metodi: 
-add_card: aggiungi una carta alla mano 
-calcolascore: calcolare valore attuale dello score 
-discard: scarta tutte le carte 
+add_card: aggiungi una carta alla mano. 
+calcola_score: calcolare valore attuale dello score, NB: calcola sia il valore massimo che minimo possibile.
+discard: scarta tutte le carte. 
 
  
