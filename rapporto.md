@@ -8,3 +8,6 @@ Stiamo lavorando su branch separate.
 
 # 22.01.2025
 Abbiamo creato un file in cui abbiamo fatto la lista degli oggetti necessari (con le loro propiretà e metodi). E un altro in cui abbiamo scritto le fasi di gioco, che si svolgono a turni. Inoltre ne abbiamo fatto un altro in cui abbiamo marcato alcune cose che sarebbero interessanti da aggiungere. Ci siamo concentrati sul capire le regole e le varie possibilità di gioco.
+
+#29.01.2025
+Andati avanti con la logica, e sistemato la fase 3 che può avere due esiti diversi (se il player sfora o pesca). 
