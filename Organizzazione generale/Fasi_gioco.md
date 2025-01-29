@@ -1,16 +1,21 @@
 Inizia il game
-Fase 1:
-Il giocatore umano e il banco piazzano la puntata d'entrata.
 
-Fase 2:
-Inizia la mano:Vengono distribuite due carte al player e una al banco, tutte scoperte
+Fase 1: Puntata iniziale.
+Il giocatore umano e il Dealer piazzano la puntata d'entrata.
 
-Fase 3:
-il giocatore ha la possibilita di pescare o terminare la mano: Player turn
+Fase 2: Inizia la mano.
+Vengono distribuite due carte al player e una al Dealer, tutte scoperte
 
-Fase 4:
-Il giocatore ha sforato o ha scelto di terminare la mano: il Dealer pesca un'altra carta e se lo score è 16 o inferiore ne pesca un'altra mentre se è 17 o superiore si passa alla prossima fase. Dealer turn
+Fase 3: Player Turn.
+Il giocatore ha la possibilita di pescare (hit) o terminare la mano (stand).
 
-Fase 5: 
-venono calcolati tutti gli score e di conseguenza vengono redistribuite le chips tra player e banco
+Fase 4: Dealer Turn.
+Quando il giocatore ha sforato o ha scelto di terminare la mano. Il Dealer pesca un'altra carta e se lo score è <= 16 ne pesca un'altra, mentre se è >=17 si passa alla prossima fase. 
+
+Fase 5: Calcolo punteggi.
+Vengono calcolati i punteggi del Dealer e del Player.
+
+Fase 6: Distribuzione chips/ soldi.
+Vengono redistribuite le chips tra Player e Dealer.
+
 Finisce il game
