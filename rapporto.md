@@ -9,5 +9,8 @@ Stiamo lavorando su branch separate.
 # 22.01.2025
 Abbiamo creato un file in cui abbiamo fatto la lista degli oggetti necessari (con le loro propiretà e metodi). E un altro in cui abbiamo scritto le fasi di gioco, che si svolgono a turni. Inoltre ne abbiamo fatto un altro in cui abbiamo marcato alcune cose che sarebbero interessanti da aggiungere. Ci siamo concentrati sul capire le regole e le varie possibilità di gioco.
 
-#29.01.2025
+# 29.1.2025
 Andati avanti con la logica, e sistemato la fase 3 che può avere due esiti diversi (se il player sfora o pesca). 
+
+# 5.2.2025
+Oggi abbiamo terminato la descrizione scritta degli oggetti e iniziato a scrivere il codice di game, player, e hand ancora da sistemare. Rimane da valutare se creare l'oggetto phase e veramente necessario. Oltre a cio abbiamo rivisto l'organizzazione generale e alcune regole in vista della stesura del codice per la logica del gioco.
