@@ -7,7 +7,7 @@ class HumanPlayer(Player):
         self.chips= chips
         self.last_score= last_score
 
-    def place_bet(self, scommessa):
+    def place_bet(self, amount):
         if amount <= self.chips:
             self.chips -= amount 
             return amount 
