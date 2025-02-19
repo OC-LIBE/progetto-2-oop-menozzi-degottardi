@@ -1,5 +1,5 @@
 import random
-from modules.py import Player
+from modules.player import Player
 
 class Dealerplayer(Player):
 
