@@ -1,15 +1,22 @@
 import random
-from modules.deck import deck
-from modules.player import player
+from modules.deck import Deck
+from modules.player import Player
+from modules.human_player import HumanPlayer
+from modules.dealer_player import Dealerplayer
+from modules.hand import Hand
 
 class Game:
-    def __init__(self,deck,player,phase):
-        self.deck = deck
-        self.player = player
-        self.phase = phase
-   
-    def new_game(self): 
-        self.phase = phase 1
-
-    def quit_game(self)
-        self.phase = phase 1
+    def __init__(self, number_of_decks):
+        self.deck = Deck(number_of_decks = number_of_decks)
+        self.deck.shuffle()
+        self.player = HumanPlayer(chips=100, last_score = 0)
+        self.dealer = Dealerplayer(dealer_score=0)
+        self.player.hand = Hand([], 0)
+        self.dealer.hand = Hand([], 0)
+        
+    def reset_game(self):
+        self.deck.reset 
+        self.deck.shuffle()
+        self.player.hand.discard()
+        self.dealer.hand.discard()
+        self.phase= "Puntata iniziale"
