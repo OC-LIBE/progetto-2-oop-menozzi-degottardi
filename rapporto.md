@@ -18,3 +18,6 @@ Oggi abbiamo terminato la descrizione scritta degli oggetti e iniziato a scriver
 # 12.2.2025
 Con l'aggiunta l'oggetto dealer_player e la scrittura di alcune altre funzioni come il conteggio dello score o il piazzamento delle puntate oggi abbiamo terminato la parte relativa alla creazione degli oggetti. Successivamente abbiamo riflettuto con il prof riguardo la logica generale del gioco e iniziato a scrivere il codice delle diverse fasi sotto l'oggetto game già definite nel file Fasi_gioco.
 La parte grafica sara basata su queste fasi grazie all'impiego della funzione di streamlit session_state.
+
+# 19.2.2025
+Ho trovato un sito che spiega il session state con streamlit (vedi file "roba aggiuntiva"). Ho inizializzato l'oggetto game e aggiunto la funzione reset. Ho iniziato a provare su una branch a creare l'app con il session state. Devo ancora capire come far sparire gli elementi una volta finito l'intervallo dettato dal session state. Inoltre la prossima volta vorrei capire come integrare bene tutte le varie funzioni e fasi del gioco che attualmente sono distribuite nei vari oggetti. 
