@@ -27,7 +27,7 @@ st.image([card.image for card in deck.cards], width=card_width)
 pesca_button = st.button("Pesca una carta")
 if pesca_button: 
    deck.draw()
-st.image([drawn_card], width=card_width)
+st.image([card.image for drawn_card], width=card_width)
 
 
 

@@ -21,3 +21,6 @@ La parte grafica sara basata su queste fasi grazie all'impiego della funzione di
 
 # 19.2.2025
 Ho trovato un sito che spiega il session state con streamlit (vedi file "roba aggiuntiva"). Ho inizializzato l'oggetto game e aggiunto la funzione reset. Ho iniziato a provare su una branch a creare l'app con il session state. Devo ancora capire come far sparire gli elementi una volta finito l'intervallo dettato dal session state. Inoltre la prossima volta vorrei capire come integrare bene tutte le varie funzioni e fasi del gioco che attualmente sono distribuite nei vari oggetti. 
+
+# 26.2.2025
+Oggi abbiamo continuato a lavorare alla logica principale e l'interfaccia del gioco. Il lavoro è dipersé piuttosto scorrevole, ma abbiamo riscontrato diverse difficolta nel utilizzare la funzione session state.
