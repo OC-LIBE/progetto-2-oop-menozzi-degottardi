@@ -24,3 +24,6 @@ Ho trovato un sito che spiega il session state con streamlit (vedi file "roba ag
 
 # 26.2.2025
 Oggi abbiamo continuato a lavorare alla logica principale e l'interfaccia del gioco. Il lavoro è dipersé piuttosto scorrevole, ma abbiamo riscontrato diverse difficolta nel utilizzare la funzione session state.
+
+# 12.3.2025
+Oggi abbiamo lavorato interamente integrando la logica preparata in precedenza nell'interfaccia streamlit. Inizialmente abbiamo aggiunto il pulsante per la distribuzione delle carte e successivamente quello per pescarne delle altre o passare il turno. Nel fare cio siamo incappati in vari problemi riguardo la disposizione delle carte in due colonne e riguardo le fasi del gioco. Ora dovremo sistemare il fatto che le colonne di carte sono visibili sin dall'inizio del gioco e proseguire con le fasi.
