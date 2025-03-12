@@ -29,6 +29,7 @@ if st.session_state.phase == "scegli_num_mazzi":
     deck = Deck(number_of_decks)
     if st.button("Conferma mazzi"): 
         st.markdown(f"## Mazzo creato con {number_of_decks} mazzo/i")
+        
         st.session_state.phase= "scommesse"
 
 if st.session_state.phase == "scommesse":
@@ -40,16 +41,17 @@ if st.session_state.phase == "scommesse":
             st.session_state.phase = "distribuzione (fase1)"
 
 if st.session_state.phase == "distribuzione (fase1)":
-     player_card1= game.deck.draw()
-     player_card2= game.deck.draw()
-     dealer_card= game.deck.draw()
+    if st.button("Distribuzione carte:"):
+        player_card1= game.deck.draw()
+        player_card2= game.deck.draw()
+        dealer_card= game.deck.draw()
      
-     game.player.hand.add_card(player_card1)
-     game.player.hand.add_card(player_card2)
-     game.player.hand.add_card(dealer_card)
+    game.player.hand.add_card(player_card1)
+    game.player.hand.add_card(player_card2)
+    game.player.hand.add_card(dealer_card)
 
-     for card in game.player.hand.cards:
-          st.image(card.image, width=100)
+    for card in game.player.hand.cards:
+        st.image(card.image, width=100)
 
 
 
