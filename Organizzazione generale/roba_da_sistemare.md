@@ -1,0 +1,3 @@
+- Cose che appaiono e scompaiono 
+- Tasto passa 
+- grafica!!!!
