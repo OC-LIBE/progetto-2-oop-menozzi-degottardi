@@ -29,7 +29,7 @@ if not st.session_state.game:
 
 if st.session_state.phase == "scegli_num_mazzi":
     number_of_decks = st.number_input("Number of decks", min_value=1, max_value=10, value=1) 
-    deck = Deck(number_of_decks)
+    deck = game.deck
     if st.button("Conferma mazzi"): 
         st.markdown(f"## Mazzo creato con {number_of_decks} mazzo/i")
         
@@ -54,7 +54,7 @@ if st.session_state.phase == "distribuzione (fase2)":
         st.session_state.phase= "player turn (fase3)"
 
         
-if st.session_state.phase != "scommesse (fase1)":
+if st.session_state.phase != "scommesse (fase1)" and st.session_state.phase !="scegli_num_mazzi" and st.session_state.game != False :
     col1, col2= st.columns(2)
 
     with col1:
@@ -76,6 +76,28 @@ if st.session_state.phase == "player turn (fase3)" :
 
     if st.button("Passa"):
         st.session_state.phase= "deaeler turn (fase4)"
+   
+
+
+def dealer_turn():
+    st.write("Turno Dealer")
+
+    game.dealer.hand.add_card(game.deck.draw())
+    st.session_state.phase= "calcolo punteggi (fase5)"
+    st.rerun()
+
 
 if st.session_state.phase == "deaeler turn (fase4)":
+<<<<<<< Updated upstream
     st.write("dealer turn")
+=======
+    dealer_turn()
+
+if st.session_state.phase=="calcolo punteggi (fase5)":
+    st.write("punteggi:")
+    
+
+
+
+
+>>>>>>> Stashed changes
