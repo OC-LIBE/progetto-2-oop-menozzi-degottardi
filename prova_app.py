@@ -79,7 +79,3 @@ if st.session_state.phase == "player turn (fase3)" :
 
 if st.session_state.phase == "deaeler turn (fase4)":
     st.write("dealer turn")
-
-
-
-
