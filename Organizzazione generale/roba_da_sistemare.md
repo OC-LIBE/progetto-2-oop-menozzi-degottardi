@@ -1,3 +1,6 @@
 - Cose che appaiono e scompaiono 
 - Tasto passa 
 - grafica!!!!
+- non accettare puntate di 0 
+- dealer deve pescare fino al 17 
+- secondo mazzo che non c'entra niente 

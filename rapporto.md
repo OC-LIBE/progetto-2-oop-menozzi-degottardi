@@ -27,3 +27,6 @@ Oggi abbiamo continuato a lavorare alla logica principale e l'interfaccia del gi
 
 # 12.3.2025
 Oggi abbiamo lavorato interamente integrando la logica preparata in precedenza nell'interfaccia streamlit. Inizialmente abbiamo aggiunto il pulsante per la distribuzione delle carte e successivamente quello per pescarne delle altre o passare il turno. Nel fare cio siamo incappati in vari problemi riguardo la disposizione delle carte in due colonne e riguardo le fasi del gioco. Ora dovremo sistemare il fatto che le colonne di carte sono visibili sin dall'inizio del gioco e proseguire con le fasi.
+
+# 2.4.2025
+Dopo la parte teorica della lezione ci siamo concentrati sulle problematiche logiche e grafiche del gioco. In particolare il tasto "passa turno" non faceva si che il dealer pescasse le mancanti carte per raggiungere il punteggio di 17. Rimane ora da terminare con la logica e lavorare sulla grafica.
