@@ -12,12 +12,12 @@ st.title("BlackJack")
 
 if 'game' not in st.session_state:
     st.session_state.game = False
-    st.session_state.game_obj=Game(3)
 
 if 'phase' not in st.session_state:
-    st.session_state.phase= False
-    
-game:Game=st.session_state.game_obj
+    st.session_state.phase = False
+
+if 'game_obj' not in st.session_state:
+    st.session_state.game_obj = None
 
 
 if not st.session_state.game:
@@ -29,11 +29,12 @@ if not st.session_state.game:
 
 if st.session_state.phase == "scegli_num_mazzi":
     number_of_decks = st.number_input("Number of decks", min_value=1, max_value=10, value=1) 
-    deck = game.deck
     if st.button("Conferma mazzi"): 
+        st.session_state.game_obj = Game(number_of_decks)
         st.markdown(f"## Mazzo creato con {number_of_decks} mazzo/i")
-        
         st.session_state.phase= "scommesse (fase1)"
+
+game: Game = st.session_state.game_obj
 
 if st.session_state.phase == "scommesse (fase1)":
     st.subheader("Fai la tua puntata:")
@@ -75,7 +76,7 @@ if st.session_state.phase == "player turn (fase3)" :
         game.player.hand.add_card(game.deck.draw())
 
     if st.button("Passa"):
-        st.session_state.phase= "deaeler turn (fase4)"
+        st.session_state.phase= "dealer turn (fase4)"
    
 
 
@@ -87,17 +88,5 @@ def dealer_turn():
     st.rerun()
 
 
-if st.session_state.phase == "deaeler turn (fase4)":
-<<<<<<< Updated upstream
+if st.session_state.phase == "dealer turn (fase4)":
     st.write("dealer turn")
-=======
-    dealer_turn()
-
-if st.session_state.phase=="calcolo punteggi (fase5)":
-    st.write("punteggi:")
-    
-
-
-
-
->>>>>>> Stashed changes
