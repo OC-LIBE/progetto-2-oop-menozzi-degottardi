@@ -15,7 +15,7 @@ class Game:
         self.dealer.hand = Hand([], 0)
         
     def reset_game(self):
-        self.deck.reset 
+        self.deck.reset() 
         self.deck.shuffle()
         self.player.hand.discard()
         self.dealer.hand.discard()
