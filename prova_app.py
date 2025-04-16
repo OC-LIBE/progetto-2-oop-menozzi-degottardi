@@ -16,9 +16,6 @@ if 'game' not in st.session_state:
 if 'phase' not in st.session_state:
     st.session_state.phase = False
 
-if 'game_obj' not in st.session_state:
-    st.session_state.game_obj = None
-
 
 if not st.session_state.game:
     if st.button('Inizia il gioco'):
