@@ -7,3 +7,4 @@
 Ricorda : In alternativa, puoi vincere con un punteggio più basso di 22 quando il valore della mano del dealer supera 21
 
 Sito spiegazione session state: https://docs.kanaries.net/topics/Streamlit/streamlit-session-state
+-st.rerun dopo pulsanti
