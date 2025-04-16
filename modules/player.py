@@ -2,9 +2,9 @@ import random
 from modules.hand import Hand 
 
 class Player:
-    def __init__(self, name, avatar):
+    def __init__(self, name, Avatar):
         self.name= name
-        self.avatar= avatar
+        self.avatar= Avatar
         self.hand= Hand
         self.chips = 100 #chips iniziali 
 
