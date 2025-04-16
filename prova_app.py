@@ -16,6 +16,8 @@ if 'game' not in st.session_state:
 if 'phase' not in st.session_state:
     st.session_state.phase = False
 
+if 'game_obj' not in st.session_state:
+    st.session_state.game_obj =None 
 
 if not st.session_state.game:
     if st.button('Inizia il gioco'):
@@ -35,7 +37,7 @@ game: Game = st.session_state.game_obj
 
 if st.session_state.phase == "scommesse (fase1)":
     st.subheader("Fai la tua puntata:")
-    bet= st.number_input("Inserisci la tua puntata:", min_value=0, max_value= 10000, step= 50) #da sostituire il max con le chips che ha il giocatore!!!
+    bet= st.number_input("Inserisci la tua puntata:", min_value=50, max_value= 10000, step= 50) #da sostituire il max con le chips che ha il giocatore!!!
     if st.button("Piazza la puntata"): 
             st.session_state.current_bet = bet 
             st.success(f"Puntata di {bet} accettata!")
@@ -71,7 +73,8 @@ if st.session_state.phase != "scommesse (fase1)" and st.session_state.phase !="s
 if st.session_state.phase == "player turn (fase3)" :
     if st.button("Pesca"):
         game.player.hand.add_card(game.deck.draw())
-
+        st.rerun()
+        
     if st.button("Passa"):
         st.session_state.phase= "dealer turn (fase4)"
    
