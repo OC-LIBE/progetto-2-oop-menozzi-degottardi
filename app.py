@@ -29,7 +29,7 @@ if pesca_button:
    deck.draw()
 st.image([card.image for drawn_card], width=card_width)
 
-
+#prova rilancio su github
 
 
 
